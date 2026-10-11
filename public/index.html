@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Posada de las Novelas Visuales – Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@400;500;700&display=swap">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><img src="/img/logo.svg" alt=""><span>La Posada de las Novelas Visuales</span></a>
+      <nav aria-label="Principal">
+        <a href="/" aria-current="page">Catálogo</a>
+      </nav>
+      <form class="search" id="search" role="search">
+        <label class="sr" for="q">Buscar novelas visuales</label>
+        <input id="q" type="search" placeholder="Buscar por título" maxlength="100">
+        <button type="submit">Buscar</button>
+      </form>
+      <a class="steam-link" href="https://steamcommunity.com/id/nyuhuhu/" target="_blank" rel="noopener noreferrer" aria-label="Mi perfil de Steam (se abre en una pestaña nueva)" title="Mi perfil de Steam"><img src="/img/steam.svg" alt="" width="44" height="44"></a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="page-title sticker">Catálogo</h1>
+    <p id="count" class="muted"></p>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <nav id="pager" class="pager" aria-label="Paginación"></nav>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/catalog.js"></script>
+</body>
+</html>
